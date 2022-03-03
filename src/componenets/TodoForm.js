@@ -4,13 +4,18 @@ function TodoForm(props) {
 
     const [input, setInput] = useState('')
 
+    const handleChange = (e) => {
+      setInput(e.target.value)
+    }
+
     const handleSubmit = (e) => {
       e.preventDefault()
 
-      console.log(props)
-      props.onSubmit({
-        id: Math.floor(Math.random() * 1000000)
-      })
+      // props.onSubmit({
+      //   id: Math.floor(Math.random() * 1000000)
+      // })
+
+      setInput("")
     }
 
   return (
@@ -21,6 +26,7 @@ function TodoForm(props) {
           placeholder="Add a todo"
           value={input}
           className="todo-input"
+          onChange={handleChange}
         />
         <button className="todo-button">Add todo</button>
       </form>
