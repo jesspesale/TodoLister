@@ -1,5 +1,5 @@
 import './App.css';
-import {TodoForm} from "./componenets/TodoForm"
+import TodoForm from './componenets/TodoForm';
 
 
 function App() {
