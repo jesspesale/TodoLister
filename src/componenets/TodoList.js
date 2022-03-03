@@ -11,13 +11,18 @@ function TodoList() {
             return
         }
         const newTodos = [todo, ...todos]
-
         setTodos(newTodos)
     }
 
     const removeTodo = (id) => {
         const removeArr = [...todos].filter(todo => todo.id !== id)
         setTodos(removeArr)
+    }
+
+    const updateTodo = (todoId, newValue) => {
+        if (!todo.text || /^\s*$/.test(todo.text)) {
+          return;
+        }
     }
 
     const completeTodo = (id) => {
