@@ -5,7 +5,11 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
-
+.todo-title{
+  font-size: 25px;
+  color: white;
+  margin: 20px;
+}
 body {
   background: linear-gradient(
     90deg,
