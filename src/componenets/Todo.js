@@ -12,7 +12,9 @@ function Todo() {
                 className={todo.isComplete ? 'todo-row complete' : 'todo-row'} 
                 key={index}
             >
-
+                <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+                    {todo.text}
+                </div>
             </div>
         ))}
     </div>
